@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: mydb
+    restart: always
+    environment:
+      POSTGRES_USER: takion
+      POSTGRES_PASSWORD: hytg46der
+      POSTGRES_DB: blog
+    ports:
+      - "5432:5432"
